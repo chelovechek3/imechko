@@ -1,16 +1,21 @@
-# This is a sample Python script.
+print("!!!!!!!!!!!ВВОДИТЬ МОЖНО ТОЛЬКО МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ, КОТОРЫЕ ЕСТЬ В ЯЗЫКЕ PYTHON!!!!!!!!!!!           (иначе подсчётов не будет)")
+print("Допустимые математические операторы: +, -, **-возведение в степень, /-деление с остатком, //-деление без остатка, %-только остаток от деления.")
+b =int(input ('Введите первое число: '))
+c =str(input('Введите оператор математических действий: '))
+a =int(input( 'Введите второе число: '))
+if (c=='+'):
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+ print('Ответ:', (b+a))
+if (c=='-'):
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+ print('Ответ:', (b-a))
+if (c=='/'):
+ print('Ответ:', (b/a))
+if (c=='*'):
+    print('Ответ: ',b*a)
+if (c=='%'):
+    print('Ответ: Остаток от деления равен: ',b%a)
+if (c == '//'):
+    print('Ответ: Результат деления без учёта остатка равен:', b // a)
+if (c =='**'):
+    print('Ответ: ', b**a)
